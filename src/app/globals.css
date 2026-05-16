@@ -1,0 +1,271 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --color-black: oklch(0 0 0);
+  --color-white: oklch(1 0 0);
+  --color-transparent: transparent;
+  --color-gray: oklch(0.7735 0 29.23);
+  --color-red: oklch(0.628 0.2577 29.23);
+
+  --color-primary: var(--color-black);
+  --color-primary-foreground: var(--color-white);
+
+  --color-secondary: var(--color-white);
+  --color-secondary-foreground: var(--color-black);
+
+  --color-accent: var(--color-gray);
+  --color-accent-foreground: var(--color-black);
+
+  --color-destructive: var(--color-red);
+
+  --background: var(--color-white);
+  --foreground: var(--color-black);
+  --card: var(--color-white);
+  --card-foreground: var(--color-black);
+  --popover: var(--color-white);
+  --popover-foreground: var(--color-black);
+  --primary: var(--color-primary);
+  --primary-foreground: var(--color-primary-foreground);
+  --secondary: var(--color-secondary);
+  --secondary-foreground: var(--color-secondary-foreground);
+  --accent: var(--color-accent);
+  --accent-foreground: var(--color-accent-foreground);
+  --destructive: var(--color-destructive);
+
+  --border: var(--color-gray);
+  --input: var(--color-gray);
+  --ring: var(--color-accent);
+
+  --text-nav: 1rem;
+  --text-nav--lh: 1.5;
+  --text-nav--fw: 400;
+
+  --text-xs: 0.875rem;
+  --text-xs--lh: 1.4;
+  --text-xs--fw: 400;
+
+  --text-sm: 1rem;
+  --text-sm--lh: 1.4;
+  --text-sm--fw: 400;
+
+  --text-base: 1.125rem;
+  --text-base--lh: 1.4;
+  --text-base--fw: 400;
+
+  --text-lg: 1.25rem;
+  --text-lg--lh: 1.4;
+  --text-lg--fw: 400;
+
+  --text-xl: 1.25rem;
+  --text-xl--lh: 1.2;
+  --text-xl--fw: 600;
+
+  --text-2xl: 1.5rem;
+  --text-2xl--lh: 1.2;
+  --text-2xl--fw: 600;
+
+  --text-3xl: 1.875rem;
+  --text-3xl--lh: 1.2;
+  --text-3xl--fw: 600;
+
+  --text-4xl: 2.25rem;
+  --text-4xl--lh: 1.2;
+  --text-4xl--fw: 600;
+
+  --text-5xl: 3rem;
+  --text-5xl--lh: 1.2;
+  --text-5xl--fw: 600;
+
+  --text-6xl: 4rem;
+  --text-6xl--lh: 1.2;
+  --text-6xl--fw: 600;
+
+  --spacing-gutter: 0.75rem;
+  --spacing-wide: 1440px;
+  --spacing-narrow: 960px;
+  --spacing-body: 65ch;
+  --spacing-header: 4rem;
+  --spacing-section: 80px;
+
+  --nav-breakpoint-sm: 768px;
+  --nav-breakpoint-md: 1024px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --text-nav: 1rem;
+    --text-nav--lh: 1.5;
+    --text-nav--fw: 400;
+
+    --text-xs: 0.875rem;
+    --text-xs--lh: 1.4;
+    --text-xs--fw: 400;
+
+    --text-sm: 1rem;
+    --text-sm--lh: 1.4;
+    --text-sm--fw: 400;
+
+    --text-base: 1.125rem;
+    --text-base--lh: 1.4;
+    --text-base--fw: 400;
+
+    --text-lg: 1.25rem;
+    --text-lg--lh: 1.4;
+    --text-lg--fw: 400;
+
+    --text-xl: 1.25rem;
+    --text-xl--lh: 1.2;
+    --text-xl--fw: 600;
+
+    --text-2xl: 1.5rem;
+    --text-2xl--lh: 1.2;
+    --text-2xl--fw: 600;
+
+    --text-3xl: 1.875rem;
+    --text-3xl--lh: 1.2;
+    --text-3xl--fw: 600;
+
+    --text-4xl: 2.25rem;
+    --text-4xl--lh: 1.2;
+    --text-4xl--fw: 600;
+
+    --text-5xl: 3rem;
+    --text-5xl--lh: 1.2;
+    --text-5xl--fw: 600;
+
+    --text-6xl: 4rem;
+    --text-6xl--lh: 1.2;
+    --text-6xl--fw: 600;
+
+    --spacing-section: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --text-nav: 1rem;
+    --text-nav--lh: 1.5;
+    --text-nav--fw: 400;
+
+    --text-xs: 0.875rem;
+    --text-xs--lh: 1.4;
+    --text-xs--fw: 400;
+
+    --text-sm: 1rem;
+    --text-sm--lh: 1.4;
+    --text-sm--fw: 400;
+
+    --text-base: 1.125rem;
+    --text-base--lh: 1.4;
+    --text-base--fw: 400;
+
+    --text-lg: 1.25rem;
+    --text-lg--lh: 1.4;
+    --text-lg--fw: 400;
+
+    --text-xl: 1.25rem;
+    --text-xl--lh: 1.2;
+    --text-xl--fw: 600;
+
+    --text-2xl: 1.5rem;
+    --text-2xl--lh: 1.2;
+    --text-2xl--fw: 600;
+
+    --text-3xl: 1.875rem;
+    --text-3xl--lh: 1.2;
+    --text-3xl--fw: 600;
+
+    --text-4xl: 2.25rem;
+    --text-4xl--lh: 1.2;
+    --text-4xl--fw: 600;
+
+    --text-5xl: 3rem;
+    --text-5xl--lh: 1.2;
+    --text-5xl--fw: 600;
+
+    --text-6xl: 4rem;
+    --text-6xl--lh: 1.2;
+    --text-6xl--fw: 600;
+
+    --spacing-section: 60px;
+  }
+}
+
+@theme inline {
+  --color-*: initial;
+  --color-black: var(--color-black);
+  --color-white: var(--color-white);
+  --color-transparent: var(--color-transparent);
+
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: var(--color-secondary-foreground);
+  --color-accent: var(--color-accent);
+  --color-accent-foreground: var(--color-accent-foreground);
+  --color-destructive: var(--color-destructive);
+
+  --color-border: var(--color-border);
+  --color-input: var(--color-input);
+  --color-ring: var(--color-ring);
+
+  --text-*: initial;
+
+  --text-nav: var(--text-nav);
+  --text-nav--line-height: var(--text-nav--lh);
+  --text-nav--font-weight: var(--text-nav--fw);
+
+  --text-xs: var(--text-xs);
+  --text-xs--line-height: var(--text-xs--lh);
+  --text-xs--font-weight: var(--text-xs--fw);
+
+  --text-sm: var(--text-sm);
+  --text-sm--line-height: var(--text-sm--lh);
+  --text-sm--font-weight: var(--text-sm--fw);
+
+  --text-base: var(--text-base);
+  --text-base--line-height: var(--text-base--lh);
+  --text-base--font-weight: var(--text-base--fw);
+
+  --text-lg: var(--text-lg);
+  --text-lg--line-height: var(--text-lg--lh);
+  --text-lg--font-weight: var(--text-lg--fw);
+
+  --text-xl: var(--text-xl);
+  --text-xl--line-height: var(--text-xl--lh);
+  --text-xl--font-weight: var(--text-xl--fw);
+
+  --text-2xl: var(--text-2xl);
+  --text-2xl--line-height: var(--text-2xl--lh);
+  --text-2xl--font-weight: var(--text-2xl--fw);
+
+  --text-3xl: var(--text-3xl);
+  --text-3xl--line-height: var(--text-3xl--lh);
+  --text-3xl--font-weight: var(--text-3xl--fw);
+
+  --text-4xl: var(--text-4xl);
+  --text-4xl--line-height: var(--text-4xl--lh);
+  --text-4xl--font-weight: var(--text-4xl--fw);
+
+  --text-5xl: var(--text-5xl);
+  --text-5xl--line-height: var(--text-5xl--lh);
+  --text-5xl--font-weight: var(--text-5xl--fw);
+
+  --text-6xl: var(--text-6xl);
+  --text-6xl--line-height: var(--text-6xl--lh);
+  --text-6xl--font-weight: var(--text-6xl--fw);
+
+  --spacing-gutter: var(--spacing-gutter);
+  --spacing-wide: var(--spacing-wide);
+  --spacing-narrow: var(--spacing-narrow);
+  --spacing-header: var(--spacing-header);
+  --spacing-body: var(--spacing-body);
+  --spacing-section: var(--spacing-section);
+
+  --breakpoint-nav-sm: 480px;
+  --breakpoint-nav-md: 760px;
+}
