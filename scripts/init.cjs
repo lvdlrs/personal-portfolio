@@ -19,7 +19,7 @@ let config = {};
 
 try {
   config = JSON.parse(
-    fs.readFileSync(path.join(cwd(), "fjellvann.json"), "utf8"),
+    fs.readFileSync(path.join(cwd(), "lvdlrs.json"), "utf8"),
   );
 } catch (error) {
   if (error.code !== "ENOENT") {
@@ -29,14 +29,14 @@ try {
   config = {
     init: false,
     sanity: {
-      organizationId: "oYhMLpswK",
+      organizationId: "oZDJeS1rb",
     },
   };
 
   console.log("Couldnt find config file, creating new one");
 
   fs.writeFileSync(
-    path.join(cwd(), "fjellvann.json"),
+    path.join(cwd(), "lvdlrs.json"),
     JSON.stringify(config, null, 2),
   );
 }
@@ -66,8 +66,8 @@ const envVariables = {
   SANITY_API_REVALIDATE_SECRET: "",
   DATABASE_URL: "postgres://default:password@username",
   MAILGUN_API_KEY: "INSERT_MAILGUN_API_KEY_HERE",
-  MAILGUN_SEND_TO: "hei@fjellvann.no",
-  MAILGUN_DOMAIN: "mg.fjellvann.no",
+  MAILGUN_SEND_TO: "lenmuel.dlrs@gmail.com",
+  MAILGUN_DOMAIN: "mg.lenmueldlrs.com",
 };
 
 try {

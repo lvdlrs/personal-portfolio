@@ -10,12 +10,6 @@
 !.yarn/releases
 !.yarn/versions
 
-# package manager
-pnpm-lock.yaml
-package-lock.json
-yarn.lock
-bun.lockb
-bun.lock
 
 # testing
 /coverage
@@ -54,4 +48,4 @@ schema.json
 src/sanity/types.ts
 
 # fjellvann
-fjellvann.json
+lvdlrs.json

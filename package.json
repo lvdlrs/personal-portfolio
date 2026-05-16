@@ -1,5 +1,5 @@
 {
-  "name": "sanity-starter",
+  "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -55,7 +55,8 @@
     "prettier-plugin-tailwindcss": "^0.7.2",
     "styled-components": "^6.3.12",
     "tailwindcss": "^4.2.2",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "@types/bun": "latest"
   },
   "overrides": {
     "@types/react": "19.2.14",
